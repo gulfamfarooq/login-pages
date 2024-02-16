@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/528e70bf9b.js" crossorigin="anonymous"></script>
+    <title>page1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2
+    /css/fontawesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Log In</h1>
+        <div class="box">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-key"></i> 
+            <input type="password" name="password" id="password" placeholder="Enter Your password">
+            <span class="eye" onclick="myFuction()">
+                <i class="fa-regular fa-eye" id="hide1"></i>
+                <i class="fa-regular fa-eye-slash" id="hide2"></i>
+            </span>
+        </div>
+        <button class="btn">Sign in</button>
+    </div>
+    <script> 
+        function myFuction(){
+            var x = document.getElementById("password");
+            var y = document.getElementById("hide1");
+            var z = document.getElementById("hide2");
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
