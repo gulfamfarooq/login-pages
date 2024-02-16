@@ -19,13 +19,7 @@ section{
         filter: hue-rotate(360deg);
     }
 }
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #000;
-} */
+
 .login-box{
     position: relative;
     height: 450px;
